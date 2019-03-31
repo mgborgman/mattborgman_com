@@ -1,0 +1,62 @@
+
+<html>
+
+<?php 
+	$users = array(
+		"mgborgman" => "stlrams",
+	);
+	
+<?php if(strtotime('now') >= strtotime('1 april 2019')): ?>
+	<h1>hello world</h1>
+<?php else: ?>
+	<?php session_start(); ?>
+	<form method="post">
+	<input type="text" name="login-username" id="login-username" placeholder="username" />
+	<input type="password" name="login-password" id="login-password" placeholder="password" />
+	<input type="submit" name="login-submit" id="login-submit" value="Login" />
+	</form>
+
+	<button id="create-account">Sign Up</button>
+<?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
